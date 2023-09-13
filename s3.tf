@@ -24,3 +24,10 @@ resource "aws_s3_bucket" "demo-bucket"{
   }
 }
 
+resource "aws_s3_bucket" "ck-demo-reeds-crossing"{
+  bucket = "ck-demo-reeds-crossing"
+
+  tags = {
+    Name = "S3Bucket"
+  }
+}
