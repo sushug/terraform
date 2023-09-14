@@ -31,3 +31,19 @@ resource "aws_s3_bucket" "ck-demo-reeds-crossing"{
     Name = "S3Bucket"
   }
 }
+
+resource "aws_s3_bucket" "ck-demo-reeds-crossing1"{
+  bucket = "ck-demo-reeds-crossing1"
+
+  tags = {
+    Name = "reeds"
+  }
+}
+
+resource "aws_s3_bucket" "ck-demo-tamarack-elementary"{
+  bucket = "ck-demo-tamarack-elementary"
+
+  tags = {
+    Name = "tamarack"
+  }
+}
