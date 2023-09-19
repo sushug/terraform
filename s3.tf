@@ -47,3 +47,11 @@ resource "aws_s3_bucket" "ck-demo-tamarack-elementary"{
     Name = "tamarack"
   }
 }
+
+resource "aws_s3_bucket" "ck-demo-rosedale"{
+  bucket = "ck-demo-rosedale"
+
+  tags = {
+    Name = "elementary-school"
+  }
+}
